@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+  } 
+  
+
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 100%; /* Show one item on small screens */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); /* Show two items on medium screens */
+    }
+  }
+  
+
+  @media (min-width: 901px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Show three items on large screens */
+    }
+  }
+  
